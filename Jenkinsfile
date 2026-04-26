@@ -7,12 +7,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/fate-it/dan-it-step2.git'
-            }
-        }
-
         stage('Build Docker') {
             steps {
                 sh 'docker build -t $IMAGE .'

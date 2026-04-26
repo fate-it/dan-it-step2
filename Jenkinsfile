@@ -15,7 +15,7 @@ pipeline {
 
         stage('Run tests') {
             steps {
-                sh 'docker run --rm $IMAGE npm test'
+                sh 'docker run --rm $IMAGE test'
             }
         }
 
